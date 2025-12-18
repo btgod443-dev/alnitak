@@ -1,0 +1,71 @@
+Alnitak Token Configuration File 
+
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+
+ACCOUNTS=[
+  "<GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA>",
+  "<GAJUZ3LR4DLJAUQPZT2MKPUOHVEYH6QZRYZOQXNP3R2VRXUD53PVUVCK>"
+]
+
+Token Information
+name = "Alnitak"
+symbol = "xALT"
+decimals = 7
+totalSupply = "100000000," 
+
+Blockchain Configuration
+blockchain = "Stellar"
+consensusMechanism = "Federated Byzantine Agreement (FBA)"
+network = "Public" 
+
+Token Distribution
+[distribution]
+[distribution.community]
+allocation = "40%"
+amount = "40,000,000" 
+
+[distribution.team]
+allocation = "20%"
+amount = "20000000" 
+
+[distribution.partners
+allocation = "15%"
+amount = "15000000" 
+
+[distribution.reserves]
+allocation = "25%"
+amount = "25000000" 
+
+Token Economics
+[tokenomics]
+tokenType = "Utility Token"
+useCases = ["Infrastructure", "Event Ticketing", "Merchandise Purchase"] 
+
+Use Cases
+[useCases]
+[useCases.Infrastructure]
+description = "xALT tokens will be used to fund infrastructural development projects in Africa and worldwide." 
+
+[useCases.eventTicketing]
+description = "xALT tokens will be used to purchase tickets for events and other activities." 
+
+[useCases.merchandisePurchase]
+description = "xALT tokens will be used to purchase various merchandise." 
+
+Organisation Information
+[organisation]
+name = "Orion Group"
+description = "Orion Group is a global organisation dedicated to promoting development and infrastructural growth in Africa and worldwide. Orion group issues xALT, a non-referenced digital asset on Stellar."
+
+Contact Information
+[contact]
+email = "info@alnitaknet.online "
+website = "https://www.alnitaknet.online 
+
+[security]
+multiSignatureWallets = true
+coldStorage = true 
+
+[governance]
+type = "Decentralized"
+votingMechanism = "Community Voting"
