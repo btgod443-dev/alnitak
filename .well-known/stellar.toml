@@ -1,28 +1,23 @@
-VERSION="2.0.0"
-NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
-
-ACCOUNTS=[
-  "GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
-  "GAJUZ3LR4DLJAUQPZT2MKPUOHVEYH6QZRYZOQXNP3R2VRXUD53PVUVCK"
-]
+# General Information
+ACCOUNTS = ["GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA", "GAJUZ3LR4DLJAUQPZT2MKPUOHVEYH6QZRYZOQXNP3R2VRXUD53PVUVCK"] #
+# NETWORK_PASSPHRASE ="Public Global Stellar Network ; September 2015"
 
 [DOCUMENTATION]
-ORG_NAME="Orion Group"
-ORG_URL="https:                        
+ORG_NAME="Alnitaknet"
+ORG_URL="https://www.alnitaknet.online"
 ORG_LOGO="https://www.alnitaknet.online/logo.png"
-ORG_DESCRIPTION="Orion Group promotes development and infrastructural growth."
-ORG_PHYSICAL_ADDRESS="Zug, Switzerland"
-ORG_OFFICIAL_EMAIL="info@"alnitaknet.online
+ORG_PHYSICAL_ADDRESS="Calabar,Nigeria"
+ORG_OFFICIAL_EMAIL="official@alnitaknet.online"
+ORG_SUPPORT_EMAIL="support@alnitaknet.online"
+ORG_DESCRIPTION="Alnitak is a non Anchor-Based utility token on Stellar"
+
+[[PRINCIPALS]]
+name="Orion Group"
+email="orion@alnitaknet.online"
 
 [[CURRENCIES]]
 code="xALT"
 issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
-status="live"
-display_decimals=7
-name="Alnitak"
-desc="Alnitak is a utility token on Stellar."
-image="https://www.alnitaknet.online/xalt.png"
-
-
-
-
+is_asset_anchored=false
+desc=Alnitak is a utility token on Stellar.
+image="https://www.alnitaknet.online/logo.png"
