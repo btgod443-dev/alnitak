@@ -19,5 +19,6 @@ email="orion@alnitaknet.online"
 code="xALT"
 issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
 is_asset_anchored=false
-desc=Alnitak is a utility token on Stellar.
+desc="Alnitak is a utility token on Stellar"
 image="https://www.alnitaknet.online/logo.png"
+
