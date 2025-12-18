@@ -1,4 +1,4 @@
-Alnitak Token Configuration File 
+"Alnitak Token" 
 
 NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
 
@@ -68,4 +68,5 @@ coldStorage = true
 
 [governance]
 type = "Decentralized"
+
 votingMechanism = "Community Voting"
