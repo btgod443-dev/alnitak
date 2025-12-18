@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining & Rewards |  Alnitak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: radial-gradient(circle at center, #1e1b4b, #020617);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #c084fc, #fb7185);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .mine-btn {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-2xl font-bold gradient-text">★ YourToken</div>
+        <div class="flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-indigo-400">Home</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Mining Power Card (Activity Simulation) -->
+            <div class="lg:col-span-8 glass p-10 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Mining Space</h2>
+                    <p class="text-gray-400 mb-8">Active mining sessions contribute to network liquidity and earn you daily rewards.</p>
+                    
+                    <div class="flex items-end gap-4 mb-10">
+                        <div class="text-6xl font-black gradient-text">42.08</div>
+                        <div class="text-gray-500 text-xl mb-2">2 xALT EARNED</div>
+                    </div>
+                </div>
+                
+                <div class="relative w-full h-48 rounded-2xl bg-indigo-950/30 overflow-hidden flex items-center justify-center">
+                    <!-- Animated Wave/Visual -->
+                    <div class="absolute inset-0 opacity-20 bg-[url('www.transparenttextures.com')]"></div>
+                    <button class="mine-btn relative z-10 px-12 py-6 rounded-full text-2xl font-bold hover:scale-105 transition active:scale-95">
+                        START MINING
+                    </button>
+                </div>
+            </div>
+
+            <!-- Social Rewards Checklist -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+                <div class="glass p-8">
+                    <h3 class="text-xl font-bold mb-6">Social Quests</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                            <div>
+                                <p class="font-semibold text-sm">Follow on X</p>
+                                <p class="text-indigo-400 text-xs">+10 TOKENS</p>
+                            </div>
+                            <button class="bg-white/10 hover:bg-white/20 px-3 py-1 rounded text-xs">Verify</button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                            <div>
+                                <p class="font-semibold text-sm">Join X</p>
+                                <p class="text-indigo-400 text-xs">+5 TOKENS</p>
+                            </div>
+                            <button class="bg-white/10 hover:bg-white/20 px-3 py-1 rounded text-xs">Verify</button>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 opacity-50">
+                            <div>
+                                <p class="font-semibold text-sm line-through">Daily Check-in</p>
+                                <p class="text-green-400 text-xs">CLAIMED</p>
+                            </div>
+                            <span class="text-green-400 text-xl">✓</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Sidebar -->
+                <div class="glass p-8 border-rose-500/20">
+                    <h3 class="text-sm uppercase text-gray-500 tracking-widest mb-2">Network Hashrate</h3>
+                    <p class="text-2xl font-bold">12.5 TH/s</p>
+                    <div class="mt-4 h-1 w-full bg-white/10 rounded-full overflow-hidden">
+                        <div class="h-full bg-rose-500 w-2/3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reward Claims (Stellar Feature) -->
+            <div class="lg:col-span-12 glass p-8 flex flex-col md:flex-row justify-between items-center gap-6 border-indigo-500/30">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-bold">Claimable Balance</h4>
+                    <p class="text-gray-400 text-sm">Rewards are sent as <a href="
