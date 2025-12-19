@@ -21,7 +21,7 @@ is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
 image="https://drive.google.com/file/d/1HoPD7ovBOKFZ_WvFi89lT1LqXtIMNIyK/view?usp=sharing"
 
-TokenDistribution
+Distribution="TokenDistribution"
 distribution.community
  allocation="50%"
   amount="50000000"
@@ -55,6 +55,7 @@ name="Orion Group"
 email="info@alnitaknet.online"
 
   
+
 
 
 
