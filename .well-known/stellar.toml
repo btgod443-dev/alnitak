@@ -5,7 +5,7 @@ ACCOUNTS = ["GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA", "GAJUZ3L
 [DOCUMENTATION]
 ORG_NAME="Alnitaknet"
 ORG_URL="https://www.alnitaknet.online"
-ORG_LOGO="https://drive.google.com/file/d/1HoPD7ovBOKFZ_WvFi89lT1LqXtIMNIyK/view?usp=sharing"
+ORG_LOGO="logo.png"
 ORG_PHYSICAL_ADDRESS="Calabar,Nigeria"
 ORG_OFFICIAL_EMAIL="official@alnitaknet.online"
 ORG_SUPPORT_EMAIL="support@alnitaknet.online"
@@ -23,4 +23,5 @@ image="https://drive.google.com/file/d/1HoPD7ovBOKFZ_WvFi89lT1LqXtIMNIyK/view?us
 [[PRINCIPALS]]
 name="Orion Group"
 email="info@alnitaknet.online"
+
 
