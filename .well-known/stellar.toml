@@ -21,23 +21,12 @@ is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
 image="https://drive.google.com/file/d/1HoPD7ovBOKFZ_WvFi89lT1LqXtIMNIyK/view?usp=sharing"
 
-[SECURITY]
-  multiSignatureWallets=true
-  coldStorage=true
-
-[GOVERNANCE]
-  type="Decentralized"
-  votingMechanism="Proof of Stake (PoS)"
-
-[CONTACT]
-  email="info@alnitaknet.online"
-  website="https://www.alnitaknet.online"
-
 [[PRINCIPALS]]
 name="Orion Group"
 email="info@alnitaknet.online"
-
+website="https://www.alnitaknet.online"
   
+
 
 
 
