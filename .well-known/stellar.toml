@@ -12,10 +12,10 @@ ORG_SUPPORT_EMAIL="support@alnitaknet.online"
 ORG_DESCRIPTION="Alnitak is a non Anchor-Based utility token on Stellar"
 
 [[CURRENCIES]]
-TokenName="Alnitak"
+tokename="Alnitak"
 code="xALT"
 decimals="7"
-totalSupply = "100000000"
+totalsupply="100000000"
 issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
 is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
@@ -24,15 +24,3 @@ image="https://drive.google.com/file/d/1HoPD7ovBOKFZ_WvFi89lT1LqXtIMNIyK/view?us
 [[PRINCIPALS]]
 name="Orion Group"
 email="info@alnitaknet.online"
-website="https://www.alnitaknet.online"
-  
-
-
-
-
-
-
-
-
-
-
