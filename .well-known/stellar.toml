@@ -5,7 +5,7 @@ ACCOUNTS = ["GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA", "GAJUZ3L
 [DOCUMENTATION]
 ORG_NAME="Alnitaknet"
 ORG_URL="https://www.alnitaknet.online"
-ORG_LOGO=".assets/logo.png"
+ORG_LOGO="(.assets/logo.png)"
 ORG_PHYSICAL_ADDRESS="Calabar,Nigeria"
 ORG_OFFICIAL_EMAIL="official@alnitaknet.online"
 ORG_SUPPORT_EMAIL="support@alnitaknet.online"
@@ -18,11 +18,12 @@ display_decimals="7"
 issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
 is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
-image=".assets/logo.png"
+image="(.assets/logo.png)"
 
 [[PRINCIPALS]]
 name="Orion Group"
 email="info@alnitaknet.online"
+
 
 
 
