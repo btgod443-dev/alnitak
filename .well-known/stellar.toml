@@ -3,19 +3,20 @@ ACCOUNTS = ["GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA", "GAJUZ3L
 # NETWORK_PASSPHRASE ="Public Global Stellar Network ; September 2015"
 
 [DOCUMENTATION]
-ORG_NAME="Alnitaknet"
+ORG_NAME="Alnitak"
 ORG_URL="https://www.alnitaknet.online"
-ORG_LOGO="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
-ORG_PHYSICAL_ADDRESS="Calabar,Nigeria"
+ORG_DESCRIPTION="Alnitak is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
 ORG_OFFICIAL_EMAIL="official@alnitaknet.online"
 ORG_SUPPORT_EMAIL="support@alnitaknet.online"
-ORG_DESCRIPTION="Alnitak is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
+ORG_LOCATION="Cal, Nigeria"
+ORG_LOGO="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
+
 
 [[CURRENCIES]]
-name="Alnitak"
 code="xALT"
-display_decimals="7"
 issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
+status = "live"
+display_decimals="7"
 is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
 image="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
@@ -23,6 +24,7 @@ image="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
 [[PRINCIPALS]]
 name="Orion Group"
 email="info@alnitaknet.online"
+
 
 
 
