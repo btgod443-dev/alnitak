@@ -1,38 +1,25 @@
 # General Information
-ACCOUNTS = ["GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA", "GAJUZ3LR4DLJAUQPZT2MKPUOHVEYH6QZRYZOQXNP3R2VRXUD53PVUVCK"] #
+ACCOUNTS = "GCQD5F4QP3AZIBJAIK5LZGCY3TCA65KG3XUF25WQ2BVFVRKLX7277J57","GA67JGLPHZ2S3I2HIFIDNFEB65XS4WNTDCLDABTD4BHBQEXLL3MODDXS"] #
 # NETWORK_PASSPHRASE ="Public Global Stellar Network ; September 2015"
 
 [DOCUMENTATION]
-ORG_NAME="Alnitak"
-ORG_URL="https://www.alnitaknet.online"
-ORG_DESCRIPTION="Alnitak is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
-ORG_OFFICIAL_EMAIL="official@alnitaknet.online"
-ORG_SUPPORT_EMAIL="support@alnitaknet.online"
+ORG_NAME="Orbit"
+ORG_URL="https://www.orbitorbx.online"
+ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
+ORG_OFFICIAL_EMAIL="official@orbitorbx.online"
+ORG_SUPPORT_EMAIL="support@orbitorbx.online"
 ORG_PHYSICAL_ADDRESS="Cal, Nigeria"
-ORG_LOGO="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
+ORG_LOGO="https://github.com/orbitorbx-dev/orbitorbx/blob/main/.assets/logo.png"
 
 
 [[CURRENCIES]]
-code="xALT"
-issuer="GCKSI3G65TXQ7KMSEQY4FUHQONZ5YLJIVI5VUYHSV4ILHNQHQSC325UA"
+code="ORBX"
+issuer="GCQD5F4QP3AZIBJAIK5LZGCY3TCA65KG3XUF25WQ2BVFVRKLX7277J57"
 status = "live"
 display_decimals="7"
 is_asset_anchored=false
 desc="Alnitak is a utility token on Stellar"
-image="https://github.com/btgod443-dev/alnitak/blob/main/.assets/logo.png"
+image="https://github.com/orbitorbx-dev/orbitorbx/blob/main/.assets/logo.png"
 
 [[PRINCIPALS]]
 name="EMINENCE"
-email="info@alnitaknet.online"
-
-
-
-
-
-
-
-
-
-
-
-
