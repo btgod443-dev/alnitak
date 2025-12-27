@@ -3,233 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Football Betting Simulator</title>
-
-<style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#020617;
-  color:#fff;
-}
-header{
-  padding:15px;
-  background:#020617;
-  border-bottom:1px solid #1e293b;
-  text-align:center;
-}
-.container{
-  display:flex;
-  flex-wrap:wrap;
-  max-width:1300px;
-  margin:auto;
-}
-.matches{
-  flex:3;
-  padding:15px;
-}
-.bet-slip{
-  flex:1;
-  background:#020617;
-  border-left:1px solid #1e293b;
-  padding:15px;
-}
-.match{
-  border:1px solid #1e293b;
-  border-radius:10px;
-  padding:10px;
-  margin-bottom:12px;
-}
-.market button{
-  margin:4px;
-  padding:6px 10px;
-  border:none;
-  border-radius:6px;
-  background:#1e293b;
-  color:#fff;
-  cursor:pointer;
-}
-.market button:hover{background:#38bdf8;color:#000;}
-.bet-item{
-  border-bottom:1px solid #1e293b;
-  padding:6px 0;
-}
-button.place{
-  width:100%;
-  padding:10px;
-  background:#22c55e;
-  border:none;
-  font-weight:bold;
-  margin-top:10px;
-  cursor:pointer;
-}
-#timer{color:#38bdf8;}
-#results{white-space:pre-line;margin-top:10px;font-size:14px;}
-</style>
+<title>ORBX Football Betting</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/@stellar/freighter-api/dist/index.umd.js"></script>
 </head>
-
 <body>
 
-<header>
-  <h2>⚽ Football Betting Simulator</h2>
-  Balance: $<span id="balance">100</span> |
-  Daily Reset In: <span id="timer"></span>
-</header>
-
 <div class="container">
+  <h1>ORBX Football Betting</h1>
+  <button id="connectWalletBtn">Connect Wallet</button>
+  <p id="walletAddress"></p>
+  <div id="trustlineStatus"></div>
 
-<div class="matches" id="matches"></div>
+  <div id="betForm" style="display:none;">
+    <h3>Place Your Bet</h3>
+    <label for="betAmount">Bet Amount (ORBX):</label>
+    <input type="number" id="betAmount" min="1" value="10">
+    <button id="placeBetBtn">Place Bet</button>
+  </div>
 
-<div class="bet-slip">
-  <h3>🧾 Bet Slip</h3>
-  <div id="slip"></div>
-  Stake: $
-  <input id="stake" type="number" value="10" min="1" style="width:100%">
-  <p>Total Odds: <span id="totalOdds">1.00</span></p>
-  <button class="place" onclick="placeBet()">Place Bet</button>
-  <div id="results"></div>
-
-  <h4>🏆 Top Wins</h4>
-  <ol id="leaders"></ol>
+  <div id="result"></div>
 </div>
 
-</div>
-
-<script>
-let balance = +localStorage.getItem("balance") || 100;
-let leaders = JSON.parse(localStorage.getItem("leaders")) || [];
-let slip=[];
-const MAX_MATCHES=10;
-
-const teams=["Man City","Arsenal","Liverpool","Chelsea","Man Utd",
-"Barcelona","Real Madrid","Bayern","PSG","Juventus","AC Milan"];
-
-function randTeam(){
- let h=teams[Math.floor(Math.random()*teams.length)],a;
- do{a=teams[Math.floor(Math.random()*teams.length)]}while(a===h);
- return {home:h,away:a};
-}
-
-function odds(){
- return {
-  H:(1.6+Math.random()).toFixed(2),
-  D:(2.8+Math.random()).toFixed(2),
-  A:(2+Math.random()).toFixed(2),
-  DC:(1.3+Math.random()).toFixed(2),
-  OU:(1.5+Math.random()).toFixed(2)
- };
-}
-
-let today = localStorage.getItem("day");
-let matches;
-
-if(today!==new Date().toDateString()){
- matches=[];
- for(let i=0;i<MAX_MATCHES;i++)
-   matches.push({...randTeam(),odds:odds()});
- localStorage.setItem("matches",JSON.stringify(matches));
- localStorage.setItem("day",new Date().toDateString());
-}else{
- matches=JSON.parse(localStorage.getItem("matches"));
-}
-
-function renderMatches(){
- const box=document.getElementById("matches");
- box.innerHTML="";
- matches.forEach((m,i)=>{
- box.innerHTML+=`
- <div class="match">
- <strong>${m.home} vs ${m.away}</strong><br>
- <div class="market">
- <button onclick="addSlip('${i}','H',${m.odds.H})">1 (${m.odds.H})</button>
- <button onclick="addSlip('${i}','D',${m.odds.D})">X (${m.odds.D})</button>
- <button onclick="addSlip('${i}','A',${m.odds.A})">2 (${m.odds.A})</button><br>
- <button onclick="addSlip('${i}','DC',${m.odds.DC})">Double Chance (${m.odds.DC})</button>
- <button onclick="addSlip('${i}','O',${m.odds.OU})">Over 2.5 (${m.odds.OU})</button>
- <button onclick="addSlip('${i}','U',${m.odds.OU})">Under 2.5 (${m.odds.OU})</button>
- </div></div>`;
- });
-}
-
-function addSlip(i,pick,odd){
- slip.push({i,pick,odd});
- renderSlip();
-}
-
-function renderSlip(){
- let s=document.getElementById("slip");
- s.innerHTML="";
- let total=1;
- slip.forEach((b,idx)=>{
- total*=b.odd;
- s.innerHTML+=`<div class="bet-item">
- Match ${+b.i+1} | ${b.pick} @ ${b.odd}
- </div>`;
- });
- document.getElementById("totalOdds").innerText=total.toFixed(2);
-}
-
-function score(){return {h:Math.floor(Math.random()*4),a:Math.floor(Math.random()*4)};}
-
-function placeBet(){
- let stake=+document.getElementById("stake").value;
- if(stake>balance||slip.length===0)return;
- balance-=stake;
- let win=true;
- let text="";
- slip.forEach(b=>{
- let sc=score();
- let total=sc.h+sc.a;
- let ok={
-  H:sc.h>sc.a,
-  D:sc.h===sc.a,
-  A:sc.a>sc.h,
-  DC:sc.h>=sc.a||sc.a>=sc.h,
-  O:total>1.5
-  U:total<=1.5
-  O:total>2.5,
-  U:total<=2.5
-  O:total>3.5
-  U:total<=3.5
- }[b.pick];
- text+=Match ${+b.i+1}: ${sc.h}-${sc.a}\n;
- if(!ok)win=false;
- });
- if(win){
-  let payout=(stake*document.getElementById("totalOdds").innerText).toFixed(2);
-  balance+=+payout;
-  leaders.push(payout);
-  text+="\n✅ ACCA WON $"+payout;
- }else text+="\n❌ ACCA LOST";
- leaders.sort((a,b)=>b-a); leaders=leaders.slice(0,5);
- localStorage.setItem("leaders",JSON.stringify(leaders));
- localStorage.setItem("balance",balance);
- document.getElementById("balance").innerText=balance.toFixed(2);
- document.getElementById("results").innerText=text;
- slip=[];
- renderSlip();
- renderLeaders();
-}
-
-function renderLeaders(){
- let l=document.getElementById("leaders");l.innerHTML="";
- leaders.forEach(w=>l.innerHTML+=<li>$${w}</li>);
-}
-
-function timer(){
- let t=new Date();t.setHours(24,0,0,0);
- let diff=t-new Date();
- let h=Math.floor(diff/36e5),
- m=Math.floor(diff%36e5/6e4),
- s=Math.floor(diff%6e4/1e3);
- document.getElementById("timer").innerText=${h}h ${m}m ${s}s;
-}
-setInterval(timer,1000);
-
-renderMatches();
-renderLeaders();
-document.getElementById("balance").innerText=balance;
-</script>
-
+<script src="app.js"></script>
 </body>
 </html>
