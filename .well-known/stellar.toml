@@ -4,7 +4,7 @@ ACCOUNTS = ["GCQD5F4QP3AZIBJAIK5LZGCY3TCA65KG3XUF25WQ2BVFVRKLX7277J57","GA67JGLP
 
 [DOCUMENTATION]
 ORG_NAME="Orbit"
-ORG_URL="https://orbitx.online"
+ORG_URL="https://www.orbitx.online"
 ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
 ORG_OFFICIAL_EMAIL="official@orbitx.online"
 ORG_SUPPORT_EMAIL="support@orbitx.online"
@@ -23,6 +23,7 @@ image="https://orbitx.online/assets/orbx-logo.png"
 
 [[PRINCIPALS]]
 name="EMINENCE"
+
 
 
 
