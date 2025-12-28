@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Airdrop Claim</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 { margin-bottom: 0.5rem; }
+        .description { color: #94a3b8; margin-bottom: 2rem; }
+        .token-info {
+            display: flex;
+            justify-content: space-around;
+            background-color: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .info-box span { display: block; }
+        .info-label { font-size: 0.875rem; color: #94a3b8; }
+        .info-value { font-size: 1.25rem; font-weight: bold; color: #38bdf8; }
+        .progress-bar-container {
+            background-color: #334155;
+            border-radius: 10px;
+            height: 20px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background-color: #38bdf8;
+            height: 100%;
+            width: 65%; /* Adjust percentage here */
+            border-radius: 10px;
+        }
+        .claim-btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+        .claim-btn:hover { background-color: #7dd3fc; }
+        .footer { margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 $TOKEN Airdrop</h1>
+        <p class="description">Claim your free tokens for being an early supporter of our project.</p>
+        
+        <div class="token-info">
+            <div class="info-box">
+                <span class="info-label">Your Allocation</span>
+                <span class="info-value">1,000</span>
+            </div>
+            <div class="info-box">
+                <span class="info-label">Total Supply</span>
+                <span class="info-value">10M</span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <p style="font-size: 0.9rem; margin-bottom: 2rem;">65% claimed</p>
+
+        <button class="claim-btn" onclick="connectWallet()">Connect Wallet & Claim</button>
+        
+        <div class="footer">
+            Contract Address: 0x...abcd
+        </div>
+    </div>
+
+    <script>
+        function connectWallet() {
+            alert("Wallet connection initiated. (Integrate Web3.js or Ethers.js here)");
+        }
+    </script>
+</body>
+</html>
