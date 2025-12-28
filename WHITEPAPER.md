@@ -1,9 +1,45 @@
-Orbit Token (ORBX)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBX | Stellar-Speed Assets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --stellar-blue: #080f27;
+            --stellar-glow: #3b82f6;
+            --orbx-silver: #e2e8f0;
+        }
+        body {
+            background-color: var(--stellar-blue);
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
+                radial-gradient(circle at 0% 100%, rgba(30, 41, 59, 0.5), transparent);
+        }
+        .stellar-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+        }
+        .orbit-path {
+            stroke-dasharray: 4;
+            animation: dash 20s linear infinite;
+        }
+        @keyframes dash { to { stroke-dashoffset: -100; } }
+    </style>
+   <!-- Long Story Box -->
+            <div class="lg:col-span-8 glass p-10">
+                <h2 class="text-3xl font-bold mb-6">Why We Built This</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+  Orbit Token (ORBX)
 A Stellar-Based Digital Asset for Payments, Utility, and Sustainable Growth
 Whitepaper – Version 1.0
 Launch Era: 2026 and Beyond
 ---
-1. Abstract
+1. Abstract 
 Orbit Token (ORBX) is a digital asset issued on the Stellar blockchain, designed
 to enable fast, low-cost, and transparent value transfer while supporting a
 growing ecosystem of real-world utility, community-driven governance, and
@@ -72,7 +108,7 @@ Trading pairs on Stellar DEX
 Payment for ecosystem services and integrations
 4. Incentives & Rewards
 Community incentives, partnerships, and adoption rewards
-5. Future DeFi Use Cases (Optional)
+5. Future DeFi Use Cases 
 Lending, pooling, or yield mechanisms (post-2026)
 ---
 7. Tokenonomics
@@ -80,7 +116,8 @@ Supply Model
 Total Supply: Fixed and transparent
 Minting: No ongoing inflation unless community-approved
 Burning: Optional deflationary mechanisms via governance
-Distribution (Indicative)
+
+Distribution
 Community & Ecosystem: 40%
 Liquidity & Market Support: 25%
 Development & Operations: 20%
@@ -148,7 +185,7 @@ Real-world financial impact
 ---
 11A. Account Architecture (Issuer vs Distributor)
 To comply fully with Stellar Development Foundation and Stellar Expert
-verification standards, Alnitak Token (XALT) enforces strict account separation
+verification standards, Orbit Token (ORBX) enforces strict account separation
 and issuer locking.
 Issuer Account (Issuance-Only)
 Public Key: GCQD5F4QP3AZIBJAIK5LZGCY3TCA65KG3XUF25WQ2BVFVRKLX7277J57
@@ -205,20 +242,20 @@ are made. Participants should conduct independent research before engaging.
 Appendix A: stellar.toml Reference
 A.1 Domain and Home Domain Verification
 The project maintains a valid stellar.toml at:
-https://www.orbitorbx.online/.well-known/stellar.toml
+https://www.orbitx.online/.well-known/stellar.toml
 The same domain is configured as the home domain of the issuer account
 Domain ownership is verifiable via HTTPS and DNS
 A.2 Mandatory TOML Metadata (Verified)
 NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
 [DOCUMENTATION]
 ORG_NAME = "Orbit"
-ORG_URL = "https://www.orbitorbx.online"
+ORG_URL = "https://www.orbitx.online"
 ORG_DESCRIPTION = "Orbit (ORBX) is a non Anchor-Based utility token on the
 Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
-ORG_OFFICIAL_EMAIL = "contact@orbitorbx.online"
-ORG_SUPPORT_EMAIL = "support@orbitorbx.online"
+ORG_OFFICIAL_EMAIL = "contact@orbitx.online"
+ORG_SUPPORT_EMAIL = "support@orbitx.online"
 ORG_PHYSICAL_ADDRESS = "Cal, Nigeria"
-ORG_LOGO="https://github.com/OrbitORBX-dev/OrbitORBX/blob/
+ORG_LOGO="https://orbitx.online/assets/orbx-logo.png"
 97609b5361b3d7d7dae30a325ddff4bf1a1cd547/logo.png"
 [[CURRENCIES]]
 code = "ORBX"
@@ -251,3 +288,4 @@ The following checklist reflects a pass condition for Stellar Expert:
 [✓] Issuer locked (master weight = 0) 
 [✓] Organization clearly identified 
 [✓] Asset intent documented
+</main>
