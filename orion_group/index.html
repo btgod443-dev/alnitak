@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orion Group | Building Infrastructure, Empowering Communities</title>
+
+  <style>
+    :root {
+      --primary: #0b3c5d;
+      --secondary: #1d6fa5;
+      --accent: #f4b41a;
+      --light: #f5f7fa;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(
+        rgba(11, 60, 93, 0.85),
+        rgba(11, 60, 93, 0.85)
+      ),
+      url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover;
+      color: white;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 8%;
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #000;
+      padding: 0.8rem 1.6rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 4rem 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    /* About */
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Focus Areas */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    /* Impact */
+    .impact {
+      background: var(--primary);
+      color: white;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .impact-grid h3 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    /* Contact */
+    .contact {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    footer {
+      background: #0a2a3f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Hero -->
+  <header>
+    <nav>
+      <h1>Orion Group</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#focus">Focus Areas</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Building Infrastructure.<br>Empowering Communities.</h2>
+        <p>
+          Orion Group is dedicated to advancing sustainable infrastructure
+          development in underdeveloped regions across the world.
+        </p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-title">
+      <h2>Who We Are</h2>
+    </div>
+    <div class="about">
+      <p>
+        Orion Group is a global development organization focused on improving
+        quality of life through infrastructure. We partner with local
+        communities, governments, and international organizations to deliver
+        long-lasting solutions that promote growth, resilience, and opportunity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Focus Areas -->
+  <section id="focus">
+    <div class="section-title">
+      <h2>Our Focus Areas</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Transportation</h3>
+        <p>Roads, bridges, and transport systems connecting communities.</p>
+      </div>
+      <div class="card">
+        <h3>Water & Sanitation</h3>
+        <p>Clean water access and sustainable sanitation solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Energy</h3>
+        <p>Reliable and renewable power infrastructure for growth.</p>
+      </div>
+      <div class="card">
+        <h3>Public Facilities</h3>
+        <p>Schools, healthcare centers, and community spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="impact">
+    <div class="section-title">
+      <h2>Our Impact</h2>
+    </div>
+    <div class="impact-grid">
+      <div>
+        <h3>25+</h3>
+        <p>Countries Reached</p>
+      </div>
+      <div>
+        <h3>120+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div>
+        <h3>3M+</h3>
+        <p>Lives Improved</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Orion Group. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
