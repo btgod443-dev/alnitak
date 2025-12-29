@@ -3,13 +3,13 @@ ACCOUNTS = ["GCQD5F4QP3AZIBJAIK5LZGCY3TCA65KG3XUF25WQ2BVFVRKLX7277J57","GA67JGLP
 # NETWORK_PASSPHRASE ="Public Global Stellar Network ; September 2015"
 
 [DOCUMENTATION]
-ORG_NAME="Orbit"
-ORG_URL="https://orbitx.online"
-ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
+ORG_NAME="Orion group"
+ORG_URL="https://orbitx.online/orion_group"
+ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based Orion Group utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
 ORG_OFFICIAL_EMAIL="official@orbitx.online"
 ORG_SUPPORT_EMAIL="support@orbitx.online"
 ORG_PHYSICAL_ADDRESS="Cal, Nigeria"
-ORG_LOGO="https://orbitx.online/assets/orbx-logo.png"
+ORG_LOGO="https://orbitx.online/orion_group/assets/orion_group_logo.png"
 
 
 [[CURRENCIES]]
@@ -24,6 +24,7 @@ image="https://orbitx.online/assets/orbx-logo.png"
 
 [[PRINCIPALS]]
 name="EMINENCE"
+
 
 
 
