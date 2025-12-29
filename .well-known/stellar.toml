@@ -9,7 +9,7 @@ ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based utility token on the Stellar B
 ORG_OFFICIAL_EMAIL="official@orbitx.online"
 ORG_SUPPORT_EMAIL="support@orbitx.online"
 ORG_PHYSICAL_ADDRESS="Cal, Nigeria"
-ORG_LOGO="https://orbitx.online/orbx-logo.png"
+ORG_LOGO="https://orbitx.online/assets/orbx-logo.png"
 
 
 [[CURRENCIES]]
@@ -20,10 +20,11 @@ status = "live"
 display_decimals="7"
 is_asset_anchored=false
 desc="Orbit is the utility token of the Orion group ecosystem"
-image="https://orbitx.online/"
+image="https://orbitx.online/assets/orbx-logo.png"
 
 [[PRINCIPALS]]
 name="EMINENCE"
+
 
 
 
