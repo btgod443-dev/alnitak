@@ -5,7 +5,7 @@ ACCOUNTS = ["GDYTQGDGHRXOIWANOUB4DY6BTKMMWTF5PVJC2KZVT6VFP5TYD7W63XO7","GDTTLA5F
 [DOCUMENTATION]
 ORG_NAME="Orion group"
 ORG_URL="https://orbxorion.online/orion_group"
-ORG_DESCRIPTION="Orbit ORBX is a non Anchor-Based Orion Group utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
+ORG_DESCRIPTION=""
 ORG_OFFICIAL_EMAIL="official@orbxorion.online"
 ORG_SUPPORT_EMAIL="support@orbxorion.online"
 ORG_PHYSICAL_ADDRESS="Cal, Nigeria"
@@ -19,11 +19,12 @@ issuer="GDYTQGDGHRXOIWANOUB4DY6BTKMMWTF5PVJC2KZVT6VFP5TYD7W63XO7"
 status = "live"
 display_decimals="7"
 is_asset_anchored=false
-desc="Orbit is the utility token of the Orion group ecosystem"
+desc="Orbit ORBX is a non Anchor-Based Orion Group utility token on the Stellar Blockchain. It is permanently Capped at 100,000,000 total Supply"
 image="https://orbxorion.online/assets/orbx-logo.png"
 
 [[PRINCIPALS]]
 name="EMINENCE"
+
 
 
 
