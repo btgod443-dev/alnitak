@@ -1,6 +1,6 @@
 # General Information
 
-[PRINCIPALS]
+[[PRINCIPALS]]
 org_name = "Orion Group"
 org_url = "https://orbxorion.online/orion-group"
 org_desc = "Orion Group develops utility-focused blockchain solutions on Stellar, with ORBX serving as the core token for staking, rewards, payments, and ecosystem participation."
@@ -21,4 +21,4 @@ display_decimals = 7
 is_asset_anchored = false
 fixed_number = 100000000
 desc = "Orbit ORBX is a non Anchor-Based Orion Group utility token on the Stellar Blockchain."
-image = "https://orbxorion.online/assets/orbx-logo.png"
+image = "https://orbxorion.online/assets/logo.png"
