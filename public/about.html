@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBX | About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --stellar-blue: #080f27;
+            --stellar-glow: #3b82f6;
+            --orbx-silver: #e2e8f0;
+        }
+        body {
+            background-color: var(--stellar-blue);
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
+                radial-gradient(circle at 0% 100%, rgba(30, 41, 59, 0.5), transparent);
+        }
+        .stellar-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+        }
+        .orbit-path {
+            stroke-dasharray: 4;
+            animation: dash 20s linear infinite;
+        }
+        @keyframes dash { to { stroke-dashoffset: -100; } }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-2xl font-bold gradient-text">Orbit</div>
+        <div class="flex space-x-8 text-sm uppercase tracking-widest">
+            <a href="index" class="hover:text-indigo-400 transition">Home</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="container mx-auto px-6 pt-16 pb-12 text-center">
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Our <span class="gradient-text"> Mission</span></h1>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto">
+            Redefining cross-border payments and digital asset ownership on the world's most efficient blockchain.
+        </p>
+    </section>
+
+    <!-- Content Grid -->
+    <main class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Long Story Box -->
+            <div class="lg:col-span-8 glass p-10">
+                <h2 class="text-3xl font-bold mb-6">Why We Built This</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    The Stellar network is built for speed and accessibility. Our token leverages these core strengths to provide a seamless bridge between traditional finance and the decentralized future. By utilizing <a href="developers.stellar.org/learn/fundamentals/stellar-data-structures/assets" class="text-indigo-400 underline">Stellar Assets</a>, we ensure every transaction is finalized in seconds.
+                </p>
+                <p class="text-gray-300 leading-relaxed">
+                    Our goal is to eliminate the high fees and slow processing times of legacy systems. Whether you are an institution or a retail holder, Alnitak provides the infrastructure for a borderless economy.
+                </p>
+            </div>
+
+            <!-- Fast Facts Sidebar -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+                <div class="glass p-8 border-indigo-500/20">
+                    <h3 class="text-xl font-bold mb-2">Network Foundation</h3>
+                    <p class="text-gray-400 text-sm">Powered by the Stellar Consensus Protocol (SCP) for energy-efficient validation.</p>
+                </div>
+                <div class="glass p-8 border-rose-500/20">
+                    <h3 class="text-xl font-bold mb-2">Transparency</h3>
+                    <p class="text-gray-400 text-sm"> Orbit token ORBX is Permanently capped at 100,000,000 tokens, 25% of which is used to add liquidity. All issuance and distribution details are verified on-chain via <a href="https://stellar.expert" class="text-rose-400 underline">Stellar.expert</a>.</p>
+                </div>
+            </div>
+
+            <!-- Value Propositions -->
+            <div class="lg:col-span-4 glass p-8 text-center">
+                <div class="text-4xl mb-4">⚡</div>
+                <h4 class="font-bold text-xl mb-2">Fast</h4>
+                <p class="text-gray-400 text-sm">5-second settlement times for global transfers.</p>
+            </div>
+            <div class="lg:col-span-4 glass p-8 text-center">
+                <div class="text-4xl mb-4">🛡️</div>
+                <h4 class="font-bold text-xl mb-2">Secure</h4>
+                <p class="text-gray-400 text-sm">Built on a network tested, trusted and recommended by global financial leaders.</p>
+            </div>
+            <div class="lg:col-span-4 glass p-8 text-center">
+                <div class="text-4xl mb-4">🌱</div>
+                <h4 class="font-bold text-xl mb-2">Green</h4>
+                <p class="text-gray-400 text-sm">Minimal energy footprint compared to PoW chains.</p>
+            </div>
+
+        </div>
+    </main>
