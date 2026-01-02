@@ -1,20 +1,18 @@
 # General Information
-accounts = [
-  "GDYTQGDGHRXOIWANOUB4DY6BTKMMWTF5PVJC2KZVT6VFP5TYD7W63XO7",
-  "GDTTLA5FN532MH3RSXSEQNWWQ7JLPZEXPUT6SKZGAP2CW6G5MKZD5ZWF"
-]
 
-network_passphrase = "Public Global Stellar Network ; September 2015"
-
-[documentation]
+[PRINCIPALS]
 org_name = "Orion Group"
 org_url = "https://orbxorion.online/orion-group"
-org_description = "Orion Group develops utility-focused blockchain solutions on Stellar, with ORBX serving as the core token for staking, rewards, payments, and ecosystem participation."
+org_desc = "Orion Group develops utility-focused blockchain solutions on Stellar, with ORBX serving as the core token for staking, rewards, payments, and ecosystem participation."
 org_official_email = "official@orbxorion.online"
 org_support_email = "support@orbxorion.online"
 org_physical_address = "Cal, Nigeria"
+name = "EMINENCE"
+github = "https://github.com/OrbitORBX-dev"
+twitter = "@orbxorion
 
-[[currencies]]
+
+[[CURRENCIES]]
 name = "Orbit"
 code = "ORBX"
 issuer = "GDYTQGDGHRXOIWANOUB4DY6BTKMMWTF5PVJC2KZVT6VFP5TYD7W63XO7"
@@ -25,7 +23,4 @@ fixed_number = 100000000
 desc = "Orbit ORBX is a non Anchor-Based Orion Group utility token on the Stellar Blockchain."
 image = "https://orbxorion.online/assets/orbx-logo.png"
 
-[[principals]]
-name = "EMINENCE"
-github = "https://github.com/OrbitORBX-dev"
-twitter = "@orbxorion"
+"
