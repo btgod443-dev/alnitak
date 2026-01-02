@@ -8,12 +8,11 @@ network_passphrase = "Public Global Stellar Network ; September 2015"
 
 [documentation]
 org_name = "Orion Group"
-org_url = "https://orbxorion.online/orion_group"
+org_url = "https://orbxorion.online/orion-group"
 org_description = "Orion Group develops utility-focused blockchain solutions on Stellar, with ORBX serving as the core token for staking, rewards, payments, and ecosystem participation."
 org_official_email = "official@orbxorion.online"
 org_support_email = "support@orbxorion.online"
 org_physical_address = "Cal, Nigeria"
-org_logo = "https://orbxorion.online/orion_group/assets/orion_group_logo.png"
 
 [[currencies]]
 name = "Orbit"
