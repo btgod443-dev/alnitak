@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Orion Group</title>
 
+  <style>
+    :root {
+      --primary: #0b3c5d;
+      --secondary: #1d6fa5;
+      --accent: #f4b41a;
+      --light: #f5f7fa;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(
+        rgba(11, 60, 93, 0.85),
+        rgba(11, 60, 93, 0.85)
+      ),
+      url("https://images.unsplash.com/photo-1496560736447-3aee7f1a55a8") center/cover;
+      color: white;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 8%;
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+    }
+
+    section {
+      padding: 4rem 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    /* Content Blocks */
+    .content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Values */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    /* Timeline */
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+      border-left: 3px solid var(--secondary);
+      padding-left: 2rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #0a2a3f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.1rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Orion Group</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h2>About Orion Group</h2>
+    </div>
+  </header>
+
+  <!-- Mission -->
+  <section>
+    <div class="section-title">
+      <h2>Our Mission</h2>
+    </div>
+    <div class="content">
+      <p>
+        Orion Group exists to bridge infrastructure gaps in underdeveloped regions
+        by delivering sustainable, scalable, and community-driven solutions.
+        We believe infrastructure is the foundation for education, healthcare,
+        economic opportunity, and long-term stability.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section>
+    <div class="section-title">
+      <h2>Our Vision</h2>
+    </div>
+    <div class="content">
+      <p>
+        We envision a world where every community has access to reliable
+        infrastructure—regardless of geography or economic status.
+        Orion Group works toward resilient societies empowered by modern,
+        inclusive development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section>
+    <div class="section-title">
+      <h2>Our Core Values</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Sustainability</h3>
+        <p>
+          Designing infrastructure that endures environmentally, socially,
+          and economically.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Integrity</h3>
+        <p>
+          Operating transparently and responsibly with partners and communities.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Community First</h3>
+        <p>
+          Local engagement ensures solutions are relevant and long-lasting.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Innovation</h3>
+        <p>
+          Applying modern technology and creative approaches to development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section>
+    <div class="section-title">
+      <h2>Our Journey</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Foundation</h4>
+        <p>
+          Orion Group was established with the goal of addressing critical
+          infrastructure shortages in underserved regions.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h4>Global Expansion</h4>
+        <p>
+          Partnerships expanded across multiple continents, enabling
+          larger-scale projects and broader impact.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h4>Today</h4>
+        <p>
+          Orion Group continues to deliver transformative infrastructure
+          projects while adapting to evolving global challenges.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Orion Group. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
