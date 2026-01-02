@@ -1,1 +1,2 @@
-exclude: [".well-known"]
+exclude:
+  - ".well-known/stellar.toml"
